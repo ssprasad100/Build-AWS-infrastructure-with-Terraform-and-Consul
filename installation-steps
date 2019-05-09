@@ -1,0 +1,14 @@
+wget https://releases.hashicorp.com/terraform/0.11.13/terraform_0.11.13_linux_amd64.zip
+ls
+apt install unzip
+unzip terraform_0.11.13_linux_amd64.zip
+ls
+cp terraform /usr/bin/
+terraform -version
+mkdir -p /opt/aws
+cd /opt/aws
+ls
+terraform init
+terraform validate
+terraform apply
+terraform destroy
